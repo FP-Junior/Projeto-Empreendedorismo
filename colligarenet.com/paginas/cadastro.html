@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFandom - Sing Up</title>
+    <link rel="stylesheet" href="../styles/cadastroStyles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html"><span><img src="../images/CNLogo_50.png" alt="" id="logoIMG"></span>ColligareNet</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="planos.html">Planos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="formBox">                                                                               <!-- DIV na qual o formulário ficará dentro -->
+            <form action="cadastro.php" method="POST">                                                                                          <!-- Início do Formulário -->
+                <fieldset>                                                                                  <!-- Início dos Campos do Formulário -->
+                    <legend>Cadastro</legend>                                                                <!-- Legenda do Formulário -->
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" class="inputUser" required>
+                        <label for="name" class="labelInput">Nome</label>
+                    </div><br>
+                    
+                    <div class="inputBox">
+                        <input type="text" name="username" id="username" class="inputUser" required>
+                        <label for="username" class="labelInput">Nome de Usuário</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">E-mail</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="password" name="password" id="password" class="inputUser" required>
+                        <label for="password" class="labelInput">Senha</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Número</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <label for="birthday">Data de Nascimento:</label>                                              
+                        <input type="date" name="birthday" id="birthday" required>
+                    </div>
+
+                    <div class="inputBox">                                                                 
+                       
+                        <p class="sexInputBoxRadio">Sexo:</p>
+                        
+                            <input type="radio" name="sex" value="masculine" id="masculine" required>
+                            <label for="masculine">Masculino</label>
+                        
+                            <input type="radio" name="sex" value="feminine" id="feminine" required>
+                            <label for="feminine">Feminino</label>
+                        
+                            <input type="radio" name="sex" value="other" id="other" required>
+                            <label for="other">Outro</label>
+
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="" name="country" id="country" class="inputUser">
+                        <label for="country" class="labelInput">País</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="state" id="state" class="inputUser">
+                        <label for="state" class="labelInput">Estado</label>
+                    </div><br>
+
+                    <div class="inputBox">
+                        <input type="text" name="city" id="city" class="inputUser"> 
+                        <label for="city" class="labelInput">Cidade</label>
+                    </div><br>
+
+                        <input type="submit" name="submit" id="submit" class="singUpButton"> 
+                </fieldset>
+            </form>
+        </div>
+</body>
+</html>
